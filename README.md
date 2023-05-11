@@ -11,3 +11,12 @@
 ## cal_order.sh
 vmd -dispdev text -e order_v1.tcl -f ../../../model_construct/K4_0.15M_20_conc.gro -args ../product.??.wrap.xtc
 ```
+
+- diffusion constant:
+```
+# utilizing gmx related commands
+## combine multiple trajectories into one
+gmx trjcat -cat -f [traj list] -o [name of combined traj] -settime -dt xxx
+## calculate the MSD and estimate the $D$
+gmx msd -f [path/to/combined traj] -s [path/to/topology] -o msdout.xvg -mol diff_mol.xvg
+```
