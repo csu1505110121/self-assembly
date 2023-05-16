@@ -22,3 +22,7 @@ gmx msd -f [path/to/combined traj] -s [path/to/topology] -o msdout.xvg -mol diff
 ```
 
 - num\_density/num\_density.tcl: calculate the num density of NA, CL, WATER
+```bash
+useage:
+vmd -dispdev text -e num_density.tcl -f gro -args ../product.TOT.wrap.xtc
+```
