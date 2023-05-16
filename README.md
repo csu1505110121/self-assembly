@@ -20,3 +20,5 @@ gmx trjcat -cat -f [traj list] -o [name of combined traj] -settime -dt xxx
 ## calculate the MSD and estimate the $D$
 gmx msd -f [path/to/combined traj] -s [path/to/topology] -o msdout.xvg -mol diff_mol.xvg
 ```
+
+- num\_density/num\_density.tcl: calculate the num density of NA, CL, WATER
