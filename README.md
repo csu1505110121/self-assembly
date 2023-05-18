@@ -26,3 +26,11 @@ gmx msd -f [path/to/combined traj] -s [path/to/topology] -o msdout.xvg -mol diff
 useage:
 vmd -dispdev text -e num_density.tcl -f gro -args ../product.TOT.wrap.xtc
 ```
+
+- dielectric constant
+```bash
+# create index.ndx file
+gmx make_ndx -f tprfile/grofile -o index.ndx
+# calculate the dielectric constant
+gmx dipoles -f trjfiles -s tpr file -n index.ndx
+```
