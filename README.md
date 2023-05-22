@@ -34,3 +34,11 @@ gmx make_ndx -f tprfile/grofile -o index.ndx
 # calculate the dielectric constant
 gmx dipoles -f trjfiles -s tpr file -n index.ndx
 ```
+
+- dipole\_orient:
+Estimate the rot. degree of freedom
+```
+usage:
+need to generate the charge info
+gmx editconf -f tprfile -mead charge.pqr
+```
