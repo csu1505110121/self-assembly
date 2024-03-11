@@ -49,3 +49,12 @@ Decompose interaction energies into Coulomb and LJ term using gromacs
 just follow the [page](https://www.alexkchew.com/tutorials/using-energy-groups-in-gromacs), make sure you have created correct `index` file and modify `energygrps` in `mdp` file
 
 
+
+if you find these scripts useful for your research, please cite the following paper
+```
+@article{zhu2024understanding,
+  title={Understanding and Fine Tuning the Propensity of ATP-Driven Liquid-Liquid Phase Separation with Oligolysine},
+  author={Zhu, Qiang and Wu, Yongxian and Luo, Ray},
+  year={2024}
+}
+```
