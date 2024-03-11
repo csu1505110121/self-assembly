@@ -42,3 +42,10 @@ usage:
 need to generate the charge info
 gmx editconf -f tprfile -mead charge.pqr
 ```
+
+- ene\_decomp:
+Decompose interaction energies into Coulomb and LJ term using gromacs
+
+just follow the [page](https://www.alexkchew.com/tutorials/using-energy-groups-in-gromacs), make sure you have created correct `index` file and modify `energygrps` in `mdp` file
+
+
